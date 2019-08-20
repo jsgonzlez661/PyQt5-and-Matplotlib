@@ -122,6 +122,7 @@ class Ui_MainWindow(object):
 			self.MplWidget.canvas.axes.legend(["% GDP change", "% unemployment"],loc='upper right')
 			self.MplWidget.canvas.axes.set_title("Year vs %")
 			self.MplWidget.canvas.axes.set_ylabel("%")
+			self.MplWidget.canvas.axes.grid(linewidth=0.2)
 			self.MplWidget.canvas.draw()
 
 from mplwidget import MplWidget
